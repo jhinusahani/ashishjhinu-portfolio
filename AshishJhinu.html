@@ -1,0 +1,431 @@
+<!--
+  ha.final.index.html
+  Production-ready HTML (copy into your project's index.html)
+  - Clean, accessible, semantic structure
+  - Performance-minded: preconnect, preload, optimized script order
+  - Integrates with ha.final.style.css and ha.js (provided earlier)
+  - Replace placeholder images with your optimized assets (WebP/AVIF preferred)
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ashish Sahani — Full‑Stack Developer | Portfolio</title>
+  <meta name="description" content="Ashish Sahani — B.Sc IT student & aspiring Full‑Stack Developer. Performance-first portfolio with real projects and accessible UX.">
+  <meta name="theme-color" content="#F5F5F5">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Ashish Sahani — Full‑Stack Developer">
+  <meta property="og:description" content="Performance-first portfolio with real projects and accessible UX.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts: preconnect + preload for best LCP behavior -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect rx='12' ry='12' width='64' height='64' fill='%231a1a1a'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='34' fill='%23F5F5F5'%3EAS%3C/text%3E%3C/svg%3E">
+
+  <!-- Critical CSS hint: main file below (rename if you prefer) -->
+  <link rel="stylesheet" href="Ashsihjhinu.css">
+  <link rel="stylesheet" href="loader.css">
+
+  <!-- Critical small inline CSS for no-flash and mobile cursor safety -->
+  <style>
+    @media (hover: none), (pointer: coarse) { #cursor-follower { display:none !important } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto } }
+  </style>
+</head>
+<body class="has-fancy-cursor">
+
+  <!-- Skip to content for keyboard users -->
+  <a class="skip-link visually-hidden" href="#main">Skip to content</a>
+
+  <!-- Custom cursor (hidden on touch) -->
+  <div id="cursor-follower" aria-hidden="true"></div>
+
+
+
+
+  <!-- ==========================================================================
+   ULTRA-PREMIUM LOADER / INTRO ANIMATION
+   Yeh element page ke shuru me dikhega aur fir JS se animate hoga.
+   ========================================================================== -->
+<!-- Loader: paste this as the FIRST element inside <body> -->
+<div class="loader" role="status" aria-label="Loading page" aria-live="polite">
+  <div class="glow-ring" aria-hidden="true"></div>
+
+  <div class="loader-inner" role="presentation">
+    <div class="loader-name" aria-hidden="true">Ashish Sahani</div>
+    <div class="accent-bar" aria-hidden="true"></div>
+  </div>
+</div>
+
+
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="Home">Ashish <strong>Sahani</strong></a>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-ctas">
+        <button id="themeToggle" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+        <a class="btn btn-outline" href="https://github.com/jhinusahani" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-primary" href="#contact">Hire Me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main" role="main">
+
+    <!-- Hero -->
+    <section id="hero" class="hero container" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="grid">
+        <div class="hero-text">
+          <h1 id="hero-title" class="title">Hi, I'm Ashish — I design &amp; build delightful web experiences.</h1>
+          <p class="subtitle">B.Sc IT • Aspiring <strong>Full‑Stack Developer</strong>. Focused on Java, Spring Boot and modern frontend.</p>
+
+          <div class="form-row">
+            <a class="btn btn-primary" href="#projects">Explore My Work</a>
+            <a class="btn btn-ghost" href="#" download="Ashish_Sahani_Resume.pdf" rel="noopener noreferrer">Download Resume</a>
+          </div>
+
+          <div class="hero-stats" aria-hidden="false">
+            <div class="stat"><strong>12</strong><small>Projects</small></div>
+            <div class="stat"><strong>3+</strong><small>Years learning</small></div>
+            <div class="stat"><strong>100%</strong><small>Performance focus</small></div>
+          </div>
+        </div>
+
+        <aside class="hero-aside" aria-hidden="true">
+          <div class="profile-card">
+            <div class="profile-image" role="img" aria-label="Profile image" style="background-image:url('WhatsApp Image 2025-10-12 at 11.29.42_e1cd3e5e.jpg')"></div>
+            <div class="profile-meta">
+              <p class="role">Full‑Stack Developer (aspiring)</p>
+              <a class="btn btn-outline" href="https://github.com/jhinusahani" target="_blank" rel="noopener">View GitHub</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Featured Case Study -->
+    <section id="case-study" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Case Study</h2>
+        <article class="case-card">
+          <div class="case-grid">
+            <div class="case-thumb">
+              <!-- Replace with optimized WebP/AVIF for production -->
+              <img src="WhatsApp Image 2025-10-16 at 14.51.28_2329f2b4.jpg" alt="Featured project screenshot" loading="lazy" width="1000" height="600">
+            </div>
+            <div class="case-body">
+              <h3>Modern SaaS Landing — Performance‑First</h3>
+              <p>I redesigned a SaaS landing to improve LCP, reduced JS bundle size and implemented accessible forms. Built with semantic HTML, optimized assets and progressive enhancement.</p>
+              <div class="case-cta">
+                <a class="btn btn-primary" href="https://qxj8x6mb-5501.inc1.devtunnels.ms/">Live Demo</a>
+                <a class="btn btn-ghost" href="#">Read Case Study</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <h2 class="section-title">About Me</h2>
+          <p>I enjoy turning complex ideas into intuitive, performant interfaces. Outside code, I’ve led NSS/DLLE teams and played college sports — teamwork and communication matter.</p>
+        </div>
+        <div class="about-skills">
+          <ul>
+            <li>UI Engineering</li>
+            <li>Backend: Java &amp; Spring Boot</li>
+            <li>Frontend: HTML, CSS, JS, React basics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="project-grid" aria-live="polite">
+
+          <a href="#" class="card" data-reveal tabindex="0" aria-label="Modern Landing Page project">
+            <div class="thumb"><img src="WhatsApp Image 2025-10-16 at 15.35.34_57b167ad.jpg" alt="Project one" loading="lazy" width="600" height="400"></div>
+            <div class="card-body"><h3>Modern Landing Page</h3><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div></div>
+          </a>
+
+          <a href="#" class="card" data-reveal tabindex="0" aria-label="Interactive Portfolio project">
+            <div class="thumb"><img src="WhatsApp Image 2025-10-16 at 15.04.55_62f4acb3.jpg" alt="Project two" loading="lazy" width="600" height="400"></div>
+            <div class="card-body"><h3>Interactive Portfolio</h3><div class="tags"><span class="tag">HTML</span><span class="tag">JS</span></div></div>
+          </a>
+
+          <a href="#" class="card" data-reveal tabindex="0" aria-label="Startup Website project">
+            <div class="thumb"><img src="WhatsApp Image 2025-10-12 at 11.29.42_e1cd3e5e.jpg" alt="Project three" loading="lazy" width="600" height="400"></div>
+            <div class="card-body"><h3>Startup Website</h3><div class="tags"><span class="tag">UX</span><span class="tag">Design</span></div></div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <h2 class="section-title">What people say</h2>
+    <div class="testimonials-grid">
+      
+      <blockquote class="testimonial" data-reveal>
+        <p>
+          <span>Ashish</span>
+          <span>delivered</span>
+          <span>a</span>
+          <span>fast,</span>
+          <span>accessible</span>
+          <span>landing</span>
+          <span>page"</span>
+          <span>and</span>
+          <span>clear</span>
+          <span>docs</span>
+          <span>—</span>
+          <span>great</span>
+          <span>communication.</span>
+        </p>
+        <cite>— Project Lead, ExampleCo</cite>
+      </blockquote>
+      
+      <blockquote class="testimonial" data-reveal>
+        <p>
+          <span>Practically</span>
+          <span>reduced</span>
+          <span>our</span>
+          <span>load</span>
+          <span>times"</span>
+          <span>and</span>
+          <span>made</span>
+          <span>the</span>
+          <span>UI</span>
+          <span>delightful.</span>
+        </p>
+        <cite>— Product Lead, Startup X</cite>
+      </blockquote>
+      
+    </div>
+  </div>
+</section>
+
+
+<section id="skills" class="section">
+<div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Logo">
+        </div>
+        <div class="skill-text">
+          <span>HTML</span><span>&amp;</span><span>CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS Logo">
+        </div>
+        <div class="skill-text">
+          <span>CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS Logo">
+        </div>
+        <div class="skill-text"><span>JavaScript</span></div>
+      </div>
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo">
+        </div>
+        <div class="skill-text"><span>Java</span></div>
+      </div>
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot Logo">
+        </div>
+        <div class="skill-text"><span>Spring Boot</span></div>
+      </div>
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-logo">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo">
+        </div>
+        <div class="skill-text"><span>React</span><span>(Basics)</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>Want to collaborate? I reply fast — <a class="contact-link" href="mailto:jhinusahani66@gmail.com">ashishsahani@email.com</a></p>
+
+       <form class="contact-form" action="#" method="post" aria-label="Contact form" data-reveal>
+  <label>
+    <input name="name" type="text" required>
+    <span class="floating-label">Your Name</span>
+  </label>
+  <label>
+    <input name="email" type="email" required>
+    <span class="floating-label">Your Email</span>
+  </label>
+  <label>
+    <textarea name="message" rows="4" required></textarea>
+    <span class="floating-label">Your Message</span>
+  </label>
+  <div class="form-actions">
+    <button class="btn btn-primary" type="submit">Send message</button>
+    <button class="btn btn-ghost" type="reset">Reset</button>
+  </div>
+</form>
+
+      </div>
+      <script>
+/* Floating-label + reveal helper */
+(function () {
+  // Floating label toggles
+  const inputs = document.querySelectorAll('.contact-form input, .contact-form textarea');
+  inputs.forEach(input => {
+    const label = input.closest('label');
+    if (!label) return;
+
+    const setHasValue = () => {
+      if (input.value && input.value.trim() !== '') label.classList.add('has-value');
+      else label.classList.remove('has-value');
+    };
+
+    setHasValue();
+    input.addEventListener('input', setHasValue);
+    input.addEventListener('focus', () => label.classList.add('focused'));
+    input.addEventListener('blur', () => label.classList.remove('focused'));
+
+    // Check for autofill
+    window.setTimeout(setHasValue, 300);
+  });
+
+  // IntersectionObserver to reveal the form
+  const form = document.querySelector('.contact-form[data-reveal]');
+  if (form) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          form.classList.add('revealed');
+          // reveal buttons a beat later
+          const actions = form.querySelector('.form-actions');
+          if (actions) {
+            actions.classList.add('revealed');
+            const buttons = actions.querySelectorAll('button');
+            buttons.forEach((btn,i) => setTimeout(()=> btn.style.transform = 'translateY(0)', i*100));
+          }
+          io.unobserve(form);
+        }
+      });
+    }, { threshold: 0.2 });
+    io.observe(form);
+  }
+})();
+</script>
+
+    </section>
+
+  </main>
+
+<!-- Footer — Ultra-Premium -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-row">
+    <div class="footer-left">
+      <p class="copyright">© <span id="year">2025</span> <strong>Ashish Sahani</strong></p>
+      <p class="foot-note">Built with performance, accessibility &amp; delightful micro-interactions.</p>
+    </div>
+
+    <div class="footer-right">
+      <nav aria-label="Footer links" class="footer-links">
+        <a class="social-btn" href="https://www.linkedin.com/in/ashish-sahani-761432380/" target="_blank" rel="noopener" aria-label="LinkedIn — Ashish Sahani" data-label="LinkedIn">
+          <!-- LinkedIn SVG -->
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.5H4.76V24H.24zM7.5 8.5h4.24v2.06h.06c.59-1.12 2.04-2.3 4.2-2.3 4.49 0 5.32 2.96 5.32 6.81V24h-4.52v-7.1c0-1.69 0-3.86-2.36-3.86-2.36 0-2.72 1.84-2.72 3.74V24H7.5z" /></svg>
+        </a>
+
+        <a class="social-btn" href="https://github.com/jhinusahani" target="_blank" rel="noopener" aria-label="GitHub — Ashish Sahani" data-label="GitHub">
+          <!-- GitHub SVG -->
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.95 3.2 9.15 7.64 10.63.56.1.77-.24.77-.54 0-.26-.01-1.09-.02-1.98-3.11.68-3.77-1.5-3.77-1.5-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.12.08 1.71 1.15 1.71 1.15 1 .71 2.61.51 3.25.39.1-.3.39-.51.71-.63-2.48-.28-5.09-1.24-5.09-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.39.11-2.9 0 0 .95-.3 3.12 1.15A10.8 10.8 0 0112 6.84c.96.004 1.93.13 2.83.38 2.17-1.45 3.12-1.15 3.12-1.15.61 1.51.23 2.62.11 2.9.72.78 1.15 1.78 1.15 3 0 4.3-2.61 5.24-5.1 5.52.4.35.75 1.03.75 2.08 0 1.5-.015 2.71-.015 3.08 0 .31.2.66.78.55C19.05 20.9 22.25 16.7 22.25 11.75 22.25 5.48 17.27.5 12 .5z"/></svg>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+</footer>
+  <script>
+  (function(){ const y = document.getElementById('year'); if(y) y.textContent = new Date().getFullYear(); })();
+</script>
+
+
+  <!-- Libraries (order matters) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/split-type.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js" defer></script>
+
+  <!-- Final behaviour file (ha.js) manages Lenis & ScrollTrigger safely -->
+  <script src="Ashishjhinu.js" defer></script>
+  <script src="loader.js"></script>
+  <script src="hero.js"></script>
+
+  <script>
+    // update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Analytics (async) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <noscript>
+    <style>
+      #cursor-follower{display:none !important}
+      [data-reveal]{opacity:1 !important; transform:none !important}
+    </style>
+    <div style="padding:12px;background:#fffbdd;color:#222">This site works best with JavaScript enabled. Without JS some animations and smooth scrolling are disabled.</div>
+  </noscript>
+
+</body>
+</html>
